@@ -26,7 +26,7 @@ jobs:
           # Use smallest supported Python version as the common denominator.
           # In theory, if everything succeed in 3.10, everything should succeed in
           # 3.11, 3.12, 3.13 and follow-up version.
-          uv sync --group all --python "3.10"
+          uv sync --group all --python "3.13"
       # Perform type checking before testing because that is quicker.
       - name: Type checking
         run: uv run ty check
